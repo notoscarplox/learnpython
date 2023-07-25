@@ -1,0 +1,2 @@
+# learnpython
+exercises of python
