@@ -11,10 +11,4 @@ x = int(position[1])
 map[x - 1][y - 1] = "X"
 
 
-
-
-
-
-
-
 print(f"{row1}\n{row2}\n{row3}")
