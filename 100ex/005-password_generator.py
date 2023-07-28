@@ -43,4 +43,4 @@ for n in range(0, lenpasswd):
     randomized_passwd += passwd[rand]
 
 
- print(randomized_passwd)
+print(randomized_passwd)
