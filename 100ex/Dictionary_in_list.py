@@ -10,16 +10,14 @@ travel_log = [
   "cities": ["Berlin", "Hamburg", "Stuttgart"]
 },
 ]
-#🚨 Do NOT change the code above
 
 #TODO: Write the function that will allow new countries
-#to be added to the travel_log. 👇
 
 def add_new_country(country_visit, times_visit, cities_visit):
     new_country={}
-    new_country["country"]=country_visit
-    new_country["visits"]=times_visit
-    new_country["cities"]=cities_visit
+    new_country["country"] = country_visit                #Remember: to index a key in a dictionary you index the actual key
+    new_country["visits"] = times_visit
+    new_country["cities"] = cities_visi
     travel_log.append(new_country)
 
 
