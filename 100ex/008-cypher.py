@@ -8,14 +8,17 @@ def encrypt(txt, shf, dir):
 	etext = ""
 	for n in txt:
 		x = 0
-		for i in alphabet:
-			if n == i:
-				if dir == "encode":
-					etext += alphabet[x + shf]
-				else:
-					etext += alphabet[x - shf]
-				break
-			x += 1
+		if n in alphabet:
+			for i in alphabet:
+				if n == i:
+					if dir == "encode":
+						etext += alphabet[x + shf]
+					else:
+						etext += alphabet[x - shf]
+					break
+				x += 1
+		else:
+			etext += n
 	print(etext)
 
 encrypt(txt=text, shf=shift, dir=direction)
