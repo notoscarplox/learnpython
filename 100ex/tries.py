@@ -1,14 +1,12 @@
-class Dog:
-    """A simple attempt to model a dog."""
-    def __init__(self, name, age):
-        """Initialize name and age attributes."""
-        self.name = name
-        self.age = age
-    def sit(self):
-        """Simulate a dog sitting in response to a command."""
-        print(f"{self.name} is now sitting.")
-    def roll_over(self):
-        """Simulate rolling over in response to a command."""
-        print(f"{self.name} rolled over!")
-my_d = Dog("Pachuco", 3)
-print(f"My dog is {my_d.name}")
+from pathlib import Path
+path = Path('/home/mc/Documents/Enchanted_April.txt')
+
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+else:
+ # Count the approximate number of words in the file:
+    words = contents.split()
+    num_words = len(words)
+    print(f"The file {path} has about {num_words} words.")
