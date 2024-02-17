@@ -1,6 +1,6 @@
 print("Welcome Bitch\nFind the treasure fast")
 
-d1 = input("Wanna go right or left madafaka").lower()
+d1 = input("Wanna go right or left madafaka\n").lower()
 
 if d1 != "left":
     print("You are F dead\nGame Over")
