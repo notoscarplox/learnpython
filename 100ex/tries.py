@@ -1,4 +1,5 @@
 from pathlib import Path
+
 path = Path('/home/mc/Documents/Enchanted_April.txt')
 
 try:
@@ -6,7 +7,7 @@ try:
 except FileNotFoundError:
     print(f"Sorry, the file {path} does not exist.")
 else:
- # Count the approximate number of words in the file:
+    # Count the approximate number of words in the file:
     words = contents.split()
     num_words = len(words)
     print(f"The file {path} has about {num_words} words.")
