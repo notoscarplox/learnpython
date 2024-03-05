@@ -66,6 +66,7 @@ my_leaf = ElectricCar('nissan', 'leaf', 2024)
 print(my_leaf.get_description())
 my_leaf.battery.describe_battery()
 
+
 # my_car = Car("sudi", "b6", 2019)
 # print(my_car.get_description())
 # my_car.odometer = 23  # Modify attribute's value directly
